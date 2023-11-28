@@ -1,0 +1,22 @@
+import time
+
+import djitellopy as tello
+drone= tello.Tello()
+drone.connect()
+drone.takeoff()
+print("hold")
+time.sleep(5)
+print("move up")
+drone.move_up(25)
+print("hold")
+time.sleep(5)
+print("move left")
+drone.move_left(50)
+print("hold")
+time.sleep(5)
+print("move right")
+drone.move_right(50)
+print("hold")
+time.sleep(5)
+print("land")
+drone.land()
